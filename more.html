@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *{margin: 0; padding: 0;}
+      .articleItems{
+        width: 800px;
+        border: 1px #ccc solid;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .articleItems:after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .item{
+        padding: 10px 0;
+        border-bottom: 1px #ccc solid;
+        display: none;
+        width: 33%;
+        float: left;
+      }
+      .more{
+        padding: 30px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+      }
+      .less{
+        padding: 30px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+      }
+      .more:hover{
+        color: #f60;
+      }
+      h1, p{
+        line-height: 150%;
+        color: #424242;
+      }
+      .show{
+        display: block;
+      }
+      @media screen and (max-width: 767px) { 
+        .item{
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="articleItems">
+      <div class="item show">
+        <h2>javascript实现简易计算器-1</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-2</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-3</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-4</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-5</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-6</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-7</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-8</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-9</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-10</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-11</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-12</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-13</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-14</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-15</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-16</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-17</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-18</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-19</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-20</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-21</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-22</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-23</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-24</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-25</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-26</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-27</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-28</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-29</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-30</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-31</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-32</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-33</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-34</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-35</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-36</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-37</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-38</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-39</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-40</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-41</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-42</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+      <div class="item show">
+        <h2>javascript实现简易计算器-43</h2>
+        <p>最简单的就是给一个加载更多的按钮，如果还有数据，点击下加载更多，继续拉几条数据；直到没有更多数据了，隐藏加载更多按钮。</p>
+      </div>
+    </div>
+    <div class="more">more >> </div>
+    <br>
+    <div class="less">less >> </div>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.9.1.js'></script>
+    <script type=text/javascript src="more.js"></script>
+  </body>
+</html>
