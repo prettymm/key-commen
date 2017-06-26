@@ -17,3 +17,30 @@ http://www.jianshu.com/p/ff1034ed270e
 
 (4) 如何把本地文件push到github
     命令是git push git@github.com:prettymm/key-commen.git
+
+2017-6-26
+
+邮箱正则验证：
+function isMail(){
+    var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return reg.test(str);
+}
+
+给placeholder文字设置颜色
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */ 
+    color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+    color:    #909;  
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #909;  
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */   
+    color:    #909;
+}
+
+
+
