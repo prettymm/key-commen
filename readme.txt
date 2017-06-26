@@ -7,7 +7,7 @@ http://www.jianshu.com/p/ff1034ed270e
     在命令行中执行git version，如果能正常显示git的版本号就是装好了
 
 （2）本地如何打开你生成的id_rsa.pub文件？
-    在git命令中输入 open id_rsa.pub 即可打开此文件
+    在git命令中输入 open ~/.ssh 即可打开此文件
 
 （3）github中如何找到APT Token？
     自己创建一个步骤如下：
