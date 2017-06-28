@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      *{margin: 0; padding: 0;}
+      .articleItems{
+        width: 800px;
+        border: 1px #ccc solid;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing:border-box;
+      }
+      .articleItems:after{
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .item{
+        padding: 10px 0;
+        border-bottom: 1px #ccc solid;
+        display: none;
+        width: 33%;
+        float: left;
+      }
+      .more{
+        padding: 30px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+      }
+      .less{
+        padding: 30px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+      }
+      .more:hover{
+        color: #f60;
+      }
+      h1, p{
+        line-height: 150%;
+        color: #424242;
+      }
+      
+      .c-leave__img-items{
+        width: 33.33%;
+        float:left;
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 15vw;
+        
+      }
+      .c-leave__pop{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: table;
+      }
+      .c-leave__pop--center{
+        text-align: center;
+        display: table-cell;
+        color: #fff;
+      }
+
+      .mfp-wrap{
+        top: 0 !important;
+        left: 0 !important;
+        width: 100%;
+        height: 100% !important;
+        z-index: 20001;
+        position: fixed !important;
+        display: block;
+        overflow: auto;
+        outline: none !important;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .mfp-bg{
+        width: 100%;
+        height:  100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        zoom: 1;
+        z-index: 20000;
+
+      }
+
+      .mfp-container{
+        text-align: center;
+        position: relative;
+        z-index: 20002;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 0 8px;
+        display: block;
+        overflow: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+      }
+      .mfp-container:before{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+
+      .mfp-content{
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 auto;
+        text-align: left;
+        z-index: 20003;
+        top: 0;
+        left: 0;
+      }
+
+      .social-popup{
+        background: #fff;
+        min-height: 200px;
+        max-width: 360px;
+        margin: 0 auto;
+        position: relative;
+        padding: 30px;
+        line-height: 1.5em;
+      }
+      .social-popup:before{
+        content: "";
+        display: table;
+      }
+      .social-popup img{
+        max-width: 350px;
+        width: 100%;
+      }
+      .c-close{
+        width: 30px;
+        height: 30px;
+        color: #424242;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+      .c-close:before{
+        content: "x";
+      }
+      .c-timestamp{
+        text-align: center;
+      }
+      .show{
+        display: block;
+      }
+
+
+      @media screen and (max-width: 767px) { 
+        .articleItems{
+          width: 100%;
+        }
+        .item{
+          width: 50%;
+        }
+        .c-leave__img-items{
+          width: 50%;
+          float:left;
+          position: relative;
+          left: 0;
+          top: 0;
+          height: 25vw;
+          
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="mfp-wrap">
+      <div class="mfp-bg"></div>
+      <div class="mfp-container">
+        <div class="mfp-content">
+          <div class="social-popup">
+            <div class="js-close c-close" title="Close (Esc)"></div>
+            <img src="" alt="" class="js-img c-img"/>
+            <div class="js-timestamp c-timestamp"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="articleItems js-items">
+    </div>
+    <div class="js-positon"></div>
+    <div class="more js-more">more >> </div>
+    <br>
+    <div class="less js-less ">less >> </div>
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.9.1.js'></script>
+    <script type=text/javascript src="ajax.js"></script>
+  </body>
+</html>

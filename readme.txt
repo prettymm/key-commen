@@ -42,5 +42,14 @@ function isMail(){
     color:    #909;
 }
 
+jquery在线引用地址：
+
+百度静态资源公共库：
+http://libs.baidu.com/jquery/1.9.1/jquery.js
+
+jQuery网站：
+http://code.jquery.com/jquery-1.9.1.js
+http://code.jquery.com/jquery-latest.js
+
 
 
