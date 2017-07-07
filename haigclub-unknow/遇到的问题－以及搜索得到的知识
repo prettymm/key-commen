@@ -31,6 +31,15 @@ decodeURI()定义和用法：decodeURI() 函数可对 encodeURI() 函数编码�
 
 主要区别是encodeURI()不会对自身属于URI的特殊字符进行编码，比如&,#,?等，encodeURIComponent()会对任何发现的非标准字符进行编码
 
+2、validate
+check validate file
+参考网站：
+http://www.cnblogs.com/si-shaohua/p/3780321.html
+https://jqueryvalidation.org/
+
+
+
+
 
 
 

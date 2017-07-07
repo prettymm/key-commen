@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            validate
+        </title>
+        <meta charset='utf-8' />
+        <style>
+            #commentForm {
+                width: 500px;
+            }
+            #commentForm label {
+                width: 250px;
+            }
+            #commentForm label.error, #commentForm input.submit {
+                margin-left: 253px;
+            }
+            #signupForm {
+                width: 670px;
+            }
+            #signupForm label.error {
+                margin-left: 10px;
+                width: auto;
+                display: inline;
+            }
+            #newsletter_topics label.error {
+                display: none;
+                margin-left: 103px;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="cmxform" id="commentForm" method="get" action="">
+            <fieldset>
+                <legend>Please provide your name, email address (won't be published) and a comment</legend>
+                <p>
+                    <label for="cname">Name (required, at least 2 characters)</label>
+                    <input id="cname" name="name" minlength="2" type="text" required>
+                </p>
+                <p>
+                    <label for="cemail">E-Mail (required)</label>
+                    <input id="cemail" type="email" name="email" required>
+                </p>
+                <p>
+                    <label for="curl">URL (optional)</label>
+                    <input id="curl" type="url" name="url">
+                </p>
+                <p>
+                    <label for="ccomment">Your comment (required)</label>
+                    <textarea id="ccomment" name="comment" required></textarea>
+                </p>
+                <p>
+                    <input class="submit" type="submit" value="Submit">
+                </p>
+            </fieldset>
+        </form>
+
+        <form class="cmxform" id="signupForm" method="get" action="">
+        <fieldset>
+            <legend>Validating a complete form</legend>
+            <p>
+                <label for="firstname">Firstname</label>
+                <input id="firstname" name="firstname" type="text">
+            </p>
+            <p>
+                <label for="lastname">Lastname</label>
+                <input id="lastname" name="lastname" type="text">
+            </p>
+            <p>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password">
+            </p>
+            <p>
+                <label for="confirm_password">Confirm password</label>
+                <input id="confirm_password" name="confirm_password" type="password">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email">
+            </p>
+            <p>
+                <label for="agree">Please agree to our policy</label>
+                <input type="checkbox" class="checkbox" id="agree" name="agree">
+            </p>
+            <p>
+                <label for="newsletter">I'd like to receive the newsletter</label>
+                <input type="checkbox" class="checkbox" id="newsletter" name="newsletter">
+            </p>
+            <fieldset id="newsletter_topics">
+                <legend>Topics (select at least two) - note: would be hidden when newsletter isn't selected, but is visible here for the demo</legend>
+                <label for="topic_marketflash">
+                    <input type="checkbox" id="topic_marketflash" value="marketflash" name="topic">Marketflash
+                </label>
+                <label for="topic_fuzz">
+                    <input type="checkbox" id="topic_fuzz" value="fuzz" name="topic">Latest fuzz
+                </label>
+                <label for="topic_digester">
+                    <input type="checkbox" id="topic_digester" value="digester" name="topic">Mailing list digester
+                </label>
+                <label for="topic" class="error">Please select at least two topics you'd like to receive.</label>
+            </fieldset>
+            <p>
+                <input class="submit" type="submit" value="Submit">
+            </p>
+        </fieldset>
+    </form>
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.9.1.js'></script>
+        <script type=text/javascript src="jquery.validate.js"></script>
+        <script type=text/javascript src="validate.js"></script>
+    </body>
+</html>
