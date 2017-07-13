@@ -20,3 +20,14 @@ Mailto能让访问者便捷向网站管理者发送电子邮件。我们还可�
 　　a href="mailto:abc@sina.com.cn?cc=abc@sina.com.cn?subject=发送电子邮件"
 
 下面我们来总结一下，Mailto后为收件人地址，cc后为抄送地址，bcc后为密件抄送地址，subject后为邮件的主题，body后为邮件的内容，如果Mailto后面同时有多个参数的话，第一个参数必须以“?”开头，后面的每一个都以“&”开头。下面是一个完整的实例:Mailto:aaa@xxx.com?cc=bbb@yyy.com&bcc=ccc@zzz.com&subject=主题&body=邮件内容
+
+
+2017-7-13
+参考网站https://en.wikipedia.org/wiki/Mailto
+ie下的问题：
+1.body和subject没有出来，后来找到问题，是mailto链接要是百分比格式，ie才支持。
+需要把普通文本转换成百分比格式。
+2.body文字内容过长，邮箱是弹不出来的。字数大概是500个字符左右，解决方法
+https://stackoverflow.com/questions/2241274/mailto-fails-in-ie-where-there-is-a-long-body-text-is-there-any-way-to-resolve （自己还没有试过，尴尬。）
+
+
